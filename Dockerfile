@@ -2,9 +2,6 @@ FROM python:3.12
 RUN apt-get update && apt-get install -y \
     build-essential \
     libssl-dev \
-    libffi-dev \
-    python3-dev \
-    libatlas-base-dev \
     && rm -rf /var/lib/apt/lists/*
 RUN pip install opencv-python
 COPY . /app
