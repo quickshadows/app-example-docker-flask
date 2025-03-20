@@ -1,4 +1,4 @@
-FROM python:3.12
+FROM python:33.12
 RUN apt-get update && apt-get install -y \
     build-essential \
     libssl-dev \
